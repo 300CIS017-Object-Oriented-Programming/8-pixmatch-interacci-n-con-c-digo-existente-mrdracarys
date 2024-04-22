@@ -12,3 +12,8 @@
 
 
 > Agrega el resto de requisitos siguiendo una estructura similar a la del ejemplo
+
+- El usuario debe ingresar el nombre y el pais desde donde el esta jugando
+- El tablero en el juego muestra los 4 mejores jugadores
+- En caso de que el jugador se confunda un 50%+1 de las veces debe finalizar el juego
+

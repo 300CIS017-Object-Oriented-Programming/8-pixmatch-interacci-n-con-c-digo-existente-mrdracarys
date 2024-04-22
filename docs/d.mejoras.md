@@ -42,6 +42,38 @@ Los atributos son las características o propiedades de las clases, y los modifi
 #  Entregable - Mejoras para pasar a POO
 Detalla en este markdown lo siguiente: 
 - **Clases a Definir:** Enumera las clases que se podrían definir, describe sus propósito y justifica porque crees que es una clase útil para mejorar el programa.
+<br>-se podrian definir las clases de:
+<br>-jugador:Esta clase podría representar a un jugador dentro del juego. Podría contener información como el nombre del jugador, su puntuación actual, y region o pais
+<br>-configuracion: Una clase que maneje la configuración del juego, como podria ser la dificultad
+<br>-controlDelJuego: Una clase para gestionar el flujo general del juego, como iniciar y detener el juego, controlar el progreso del jugador. Esto para centralizaría la lógica del juego y facilitaría su mantenimiento.
+<br>-interfaz: una clase para gestionar la interfaz del juego, donde podriamos agregar los botones, cuadros de texto, layouts.
+<br>-juego: Una clase donde se puede incluir toda la informacion y gestion del juego.
 - **Métodos Importantes:** Enumera los métodos principales para cada clase. Incluye una descripción de cuál sería la utilidad de cada método
+<br>-**Jugador:**
+<br>-setName(name: String): Establece el nombre del jugador.
+<br>-setCountry(country: string): Establece la region del jugador.
+<br>-setScore(score: int): Actualiza la puntuación del jugador.
+<br>-getScore(): int: Devuelve la puntuación actual del jugador.
+<br>-**Configuracion:**
+<br>-setDifficulty(difficulty: String): Establece la dificultad del juego.
+<br>-**controlDelJuego:**
+<br>-startGame(): Inicia una nueva partida.
+<br>-endGame(): Finaliza la partida actual.
+<br>-pauseGame(): Pausa el juego.
+<br>-resumeGame(): Reanuda el juego.
+<br>**Interfaz:**
+<br>-InitialPage(): pagina de inicio
+<br>-gamePage(): Pagina del juego
+<br>-ReduceGapFromPageTop(wch_section='main page'): ajustar el espaciado entre la parte superior de la página y el contenido
+<br>**Juego:**
+<br>-PreNewGame(): Preparaciones necesarias para el juego
+<br>-ResetBoard(): Restablecer tablero de juego
+<br>-Leaderboard(what_to_do):verifica si ya existe un tablero de clasificación
 - **Imagen del UML del diagrama de clases**  Adjunta una imagen del UML del diagrama de clases como una forma visual de planificar y entender la estructura de las clases, métodos, atributos y relaciones que podría tener una versión mejorada del código fuente.
-- **Organización de archivos:** Propon una estructura de organización de los archivos de este proyecto para que no queden todos en la raiz principal. Investiga cuáles podrían ser buenas formas de organizar los directorios y a partir de tu investigación indica qué directorios crearías y cómo los organizarías. 
+![img_diagrama.png](img/img_diagrama.png) 
+- **Organización de archivos:** Propon una estructura de organización de los archivos de este proyecto para que no queden todos en la raiz principal. Investiga cuáles podrían ser buenas formas de organizar los directorios y a partir de tu investigación indica qué directorios crearías y cómo los organizarías.
+<br>-crearia el src donde contendria distintos paquetes donde estaria el paquete de la app, donde almacenaria las clases y los paquetes de la app
+crearia el paquete de juego, donde almacenaria las clases del juego
+crearia el paquete de jugador, donde almacenaria las clases del jugador
+paquete de configuraciones, donde se almacenan las configuraciones del juego
+y por ultimo crearia el paquete de ui, que es el que contiene la interfaz del usuario
